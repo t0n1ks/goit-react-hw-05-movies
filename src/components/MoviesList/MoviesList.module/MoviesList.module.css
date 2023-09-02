@@ -1,0 +1,40 @@
+.moviesListContainer {
+    margin: 20px; 
+  }
+  
+  .movieItem {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+    margin-bottom: 20px;
+    width: 200px; 
+    cursor: pointer;
+  }
+  
+  .movieItem:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  .movieImage {
+    width: 100%;
+    height: auto;
+  }
+  
+
+  .movieTitle {
+    margin: 10px;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .moviesList {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    padding: 0;
+    list-style: none;
+  }
+  

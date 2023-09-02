@@ -1,0 +1,45 @@
+/* Стилі для інформації про фільм */
+.movieInfo {
+    display: flex;
+    gap: 20px;
+  }
+  
+  /* Стилі для постера */
+  .posterContainer {
+    width: 30%;
+  }
+  
+  .poster {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Стилі для деталей фільму */
+  .details {
+    flex: 1;
+  }
+  
+  /* Стилі для заголовка */
+  .title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  /* Стилі для дати релізу та середнього голосу */
+  .releaseDate,
+  .voteAverage {
+    margin-bottom: 5px;
+  }
+  
+  /* Стилі для огляду */
+  .overview {
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  /* Стилі для тексту огляду */
+  .overviewText {
+    line-height: 1.6;
+  }
+  

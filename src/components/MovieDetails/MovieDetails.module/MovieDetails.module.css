@@ -1,0 +1,40 @@
+.movieDetailsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .backButtonContainer {
+    align-self: flex-start;
+    margin-top: 15px;
+  }
+  
+  .backButton {
+    padding: 10px 15px;
+    background-color: #007bffaf;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.2s, color 0.2s;
+  }
+  
+  .backButton:hover {
+    background-color: #0057b3dc;
+  }
+  
+  .contentContainer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .movieImageContainer {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .movieImage {
+    max-width: 100%;
+    height: auto;
+  }

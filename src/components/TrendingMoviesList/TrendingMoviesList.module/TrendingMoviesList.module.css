@@ -1,0 +1,20 @@
+/* Додайте ці стилі в свій файл CSS */
+.movieItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+  }
+  
+  .movieTitle {
+    flex: 1;
+    margin-right: 10px;
+  }
+  
+  .movieImageSmall {
+    width: 5px;
+    height: 5px;
+  }
+  

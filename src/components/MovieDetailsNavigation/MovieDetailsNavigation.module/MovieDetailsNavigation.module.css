@@ -1,0 +1,39 @@
+.navigation {
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column; 
+  }
+  
+  .title {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .links {
+    list-style: none;
+    padding: 0;
+    display: flex; 
+    gap: 10px; 
+  }
+  
+  .link {
+    font-size: 16px;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.2s;
+    cursor: pointer;
+  }
+  
+  .link:hover {
+    color: #007bff;
+  }
+  
+  .activeLink {
+    color: #007bff;
+    font-weight: bold;
+  }
+  
