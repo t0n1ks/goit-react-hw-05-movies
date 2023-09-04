@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { fetchTrendingMovies } from '../api.services/api.services';
-import TrendingMoviesList from '../TrendingMoviesList/TrendingMoviesList';
+import { fetchTrendingMovies } from '../../../api.services/api.services';
+import TrendingMoviesList from '../../TrendingMoviesList/TrendingMoviesList';
 import'./Home.module/Home.module.css'
 
 function Home() {

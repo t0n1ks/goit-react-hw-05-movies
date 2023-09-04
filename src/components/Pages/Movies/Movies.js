@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
-import { fetchTrendingMovies, searchMovies } from '../api.services/api.services';
+import { fetchTrendingMovies, searchMovies } from '../../../api.services/api.services';
 
-import MoviesList from '../MoviesList/MoviesList';
-import SearchForm from '../SearchForm/SearchForm';
+import MoviesList from '../../MoviesList/MoviesList';
+import SearchForm from '../../SearchForm/SearchForm';
 
 function Movies() {
   const location = useLocation();

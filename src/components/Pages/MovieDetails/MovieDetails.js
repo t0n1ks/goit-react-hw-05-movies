@@ -1,10 +1,10 @@
 import React, { useState, useEffect, Suspense } from 'react';
 import { useParams, Routes, Route, Link, Outlet} from 'react-router-dom';
-import MovieDetailsInfo from '../MovieDetailsInfo/MovieDetailsInfo';
-import MovieDetailsNavigation from '../MovieDetailsNavigation/MovieDetailsNavigation';
-import Cast from '../Cast/Cast';
-import Reviews from '../Reviews/Reviews';
-import { fetchMovieDetails } from '../api.services/api.services';
+import MovieDetailsInfo from '../../MovieDetailsInfo/MovieDetailsInfo';
+import MovieDetailsNavigation from '../../MovieDetailsNavigation/MovieDetailsNavigation';
+import Cast from '../../Cast/Cast';
+import Reviews from '../../Reviews/Reviews';
+import { fetchMovieDetails } from '../../../api.services/api.services';
 import styles from './MovieDetails.module/MovieDetails.module.css';
 
 function MovieDetails() {

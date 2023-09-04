@@ -1,15 +1,15 @@
 import { lazy } from 'react';
 
 export const HomePage = lazy(() =>
-  import('../Home/Home')
+  import('../Pages/Home/Home')
 );
 
 export const MoviesPage = lazy(() =>
-  import('../Movies/Movies')
+  import('../Pages/Movies/Movies')
 );
 
 export const MovieDetailsPage = lazy(() =>
-  import('../MovieDetails/MovieDetails')
+  import('..//Pages/MovieDetails/MovieDetails')
 );
 
 export const CastPage = lazy(() =>
