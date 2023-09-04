@@ -1,5 +1,5 @@
 import React, { useState, useEffect, Suspense } from 'react';
-import { useParams, Routes, Route, Link, Outlet} from 'react-router-dom';
+import { useParams, Routes, Route, Outlet, useNavigate } from 'react-router-dom';
 import MovieDetailsInfo from '../../MovieDetailsInfo/MovieDetailsInfo';
 import MovieDetailsNavigation from '../../MovieDetailsNavigation/MovieDetailsNavigation';
 import Cast from '../../Cast/Cast';
@@ -11,6 +11,7 @@ function MovieDetails() {
   const { movieId } = useParams();
   const [movie, setMovie] = useState(null);
   const [activeTab] = useState('info');
+  const navigate = useNavigate(); 
  
 
   useEffect(() => {
@@ -26,9 +27,9 @@ function MovieDetails() {
   return (
     <div className={styles.movieDetailsContainer}>
       <div className={styles.backButtonContainer}>
-        <Link to="/movies" className={styles.backButton}>
-          Back to Movies
-        </Link>
+      <button onClick={() => navigate(-1)} className={styles.backButton}>
+          Go Back
+        </button>
       </div>
       <div className={styles.contentContainer}>
         <div className={styles.movieImageContainer}></div>

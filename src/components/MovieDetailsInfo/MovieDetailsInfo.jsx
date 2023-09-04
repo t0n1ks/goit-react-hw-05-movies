@@ -1,13 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './MovieDetailsInfo.module/MovieDetailsInfo.module.css';
+import noImg from '../../resources/noImg.png';
 
 function MovieDetailsInfo({ movie }) {
   return (
     <div className={styles.movieInfo}>
       <div className={styles.posterContainer}>
         <img
-          src={`https://image.tmdb.org/t/p/w300${movie.poster_path}`}
+          src={movie.poster_path ? `https://image.tmdb.org/t/p/w300${movie.poster_path}` : noImg}
           alt={movie.title}
           className={styles.poster}
         />

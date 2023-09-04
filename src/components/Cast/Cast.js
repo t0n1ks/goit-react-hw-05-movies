@@ -22,8 +22,9 @@ function Cast() {
 
   return (
     <div>
+      
       <h2>Cast</h2>
-      <CastList cast={cast} />
+      {cast.length > 0 ? <CastList cast={cast} /> : <p>No cast available</p>}
     </div>
   );
 }

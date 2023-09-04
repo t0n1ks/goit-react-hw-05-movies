@@ -1,4 +1,6 @@
 import React from 'react';
+import noImg from '../../resources/noImg.png';
+import styles from './CastList.module/CastList.module.css'
 
 function CastList({ cast }) {
   return (
@@ -6,9 +8,9 @@ function CastList({ cast }) {
       {cast.map(actor => (
         <div key={actor.id} className="castItem">
           <img
-            src={`https://image.tmdb.org/t/p/w200${actor.profile_path}`}
+            src={actor.profile_path ? `https://image.tmdb.org/t/p/w200${actor.profile_path}` : noImg}
             alt={`${actor.name} profile`}
-            className="castImage"
+            className={styles.castImage}
           />
           <p className="castName">{actor.name}</p>
           <p className="castCharacter">Character: {actor.character}</p>

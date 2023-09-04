@@ -2,6 +2,7 @@ import React, { useState, useEffect, useCallback } from 'react';
 import { Link } from 'react-router-dom';
 import { fetchTrendingMovies, searchMovies } from '../../api.services/api.services';
 import styles from './MoviesList.module/MoviesList.module.css';
+import noImg from '../../resources/noImg.png';
 
 function MoviesList({ searchQuery, movies }) {
   const [moviesData, setMoviesData] = useState([]);
@@ -34,7 +35,7 @@ function MoviesList({ searchQuery, movies }) {
             <Link to={`/movies/${movie.id}`}>
               <img
                 className={styles.movieImage}
-                src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
+                src={movie.poster_path ? `https://image.tmdb.org/t/p/w500${movie.poster_path}` : noImg}
                 alt={movie.title}
               />
               <p className={styles.movieTitle}>{movie.title}</p>
