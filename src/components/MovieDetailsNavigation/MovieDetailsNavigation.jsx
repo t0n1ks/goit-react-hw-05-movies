@@ -11,8 +11,8 @@ function MovieDetailsNavigation() {
   const handleTabChange = (tab) => {
     setActiveTab(tab);
 
-    const tabUrl = tab === 'cast' ? `/movies/${movieId}/cast` : `/movies/${movieId}/reviews`;
-    window.history.pushState(null, null, tabUrl)
+    const tabUrl = tab === 'cast' ? `movies/${movieId}/cast` : `movies/${movieId}/reviews`;
+    window.history.pushState(null, null, `/goit-react-hw-05-movies/${tabUrl}`)
   };
 
   return (

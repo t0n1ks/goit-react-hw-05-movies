@@ -1,5 +1,5 @@
 import React, { useState, useEffect, Suspense } from 'react';
-import { useParams, Routes, Route, Outlet, useNavigate } from 'react-router-dom';
+import { useParams, Routes, Route, Outlet,useNavigate } from 'react-router-dom';
 import MovieDetailsInfo from '../../MovieDetailsInfo/MovieDetailsInfo';
 import MovieDetailsNavigation from '../../MovieDetailsNavigation/MovieDetailsNavigation';
 import Cast from '../../Cast/Cast';
