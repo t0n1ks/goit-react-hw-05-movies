@@ -21,8 +21,8 @@ function App() {
                 <Route path="cast" element={<CastPage />} />
                 <Route path="reviews" element={<ReviewsPage />} />
               </Route>
-            </Route>
             <Route path='*' element={<Navigate to='/' />} />
+            </Route>
           </Routes>
         </Suspense> 
     </Router>
