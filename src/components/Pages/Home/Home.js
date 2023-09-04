@@ -3,6 +3,7 @@ import { fetchTrendingMovies } from '../../../api.services/api.services';
 import TrendingMoviesList from '../../TrendingMoviesList/TrendingMoviesList';
 import'./Home.module/Home.module.css'
 
+
 function Home() {
   const [trendingMovies, setTrendingMovies] = useState([]);
   const [loading, setLoading] = useState(true);
