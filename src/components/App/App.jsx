@@ -1,5 +1,5 @@
 import React, { Suspense } from 'react';
-import { Route, Outlet, Navigate, HashRouter as Router, Routes } from 'react-router-dom';
+import { Route, Outlet, Navigate, BrowserRouter as Router, Routes } from 'react-router-dom';
 import AppBar from '../AppBar/AppBar';
 import Container from '../Container/Container';
 
@@ -11,7 +11,7 @@ const ReviewsPage = React.lazy(() => import('../Reviews/Reviews'));
 
 function App() {
   return (
-    <Router>     
+    <Router basename="/goit-react-hw-05-movies">    
         <Suspense fallback={<div>Loading...</div>}>
           <Routes>
             <Route path="/" element={<><Container><AppBar/><Outlet/></Container></>}>
