@@ -1,5 +1,5 @@
 import React, { Suspense } from 'react';
-import { Route, Outlet, Navigate, BrowserRouter as Router, Routes } from 'react-router-dom';
+import { Route, Outlet, Navigate, HashRouter as Router, Routes } from 'react-router-dom';
 import AppBar from '../AppBar/AppBar';
 import Container from '../Container/Container';
 
@@ -21,8 +21,8 @@ function App() {
                 <Route path="cast" element={<CastPage />} />
                 <Route path="reviews" element={<ReviewsPage />} />
               </Route>
-            <Route path='*' element={<Navigate to='/' />} />
             </Route>
+            <Route path='*' element={<Navigate to='/' />} />
           </Routes>
         </Suspense> 
     </Router>
