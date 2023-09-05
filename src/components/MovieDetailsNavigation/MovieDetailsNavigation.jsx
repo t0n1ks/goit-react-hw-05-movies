@@ -12,7 +12,7 @@ function MovieDetailsNavigation() {
     setActiveTab(tab);
 
     const tabUrl = tab === 'cast' ? `movies/${movieId}/cast` : `movies/${movieId}/reviews`;
-    window.history.pushState(null, null, `/goit-react-hw-05-movies/${tabUrl}`)
+    window.history.replaceState(null, null, `/goit-react-hw-05-movies/${tabUrl}`)
   };
 
   return (
